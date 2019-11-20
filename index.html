@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/computer.jpg" />
+    <meta charset="utf-8" />
+    <title>
+        Calculator
+    </title>
+</head>
+
+<body>
+    <form name="form" id="formdisplay">
+        <input id="textview" onclick="none()">
+    </form>
+    <table class="table">
+        <tr>
+            <td><button value="Clear" onclick="clear()"> Clear</button></td>
+            <td><button value="AC" onclick="allClear()"> AC</button></td>
+            <td><button value="*" onclick="get('*')"> *</button></td>
+            <td><button value="-" onclick="get('-') "> -</button></td>
+        </tr>
+        <tr>
+
+            <td><button value="7" onclick="get('7') "> 7</button></td>
+            <td><button value="8" onclick="get('8') "> 8</button></td>
+            <td><button value="9" onclick="get('9') "> 9</button></td>
+            <td><button value="/" onclick="get('/') "> /</button></td>
+
+        </tr>
+        <tr>
+            <td><button value="4" onclick="get('4') "> 4</button></td>
+            <td><button value="5" onclick="get('5') "> 5</button></td>
+            <td><button value="6" onclick="get('6') "> 6</button></td>
+            <td><button value="+" onclick="get('+') "> +</button></td>
+
+
+        </tr>
+        <tr>
+            <td><button value="1" onclick="get('1') "> 1</button></td>
+            <td><button value="2" onclick="get('2') "> 2</button></td>
+            <td><button value="3" onclick="get('3') "> 3</button></td>
+            <td rowspan="2 "><button value="Enter" onclick="Enter()">Enter</button></td>
+        </tr>
+        <tr>
+            <td colspan="2 "><button value="0" onclick="get('0') ">0</button></td>
+            <td><button value="." onclick="get('.') ">.</button></td>
+
+        </tr>
+    </table>
+</body>
+<script src="app.js ">
+</script>
+
+</html>
