@@ -8,8 +8,10 @@ function Enter() {
     document.getElementById("textview").value = y;
 }
 
-function clear() {
-    document.getElementById("textview").value = "";
+function erase() {
+    let erasedValue = document.getElementById("textview").value;
+    erasedValue = erasedValue.slice(0, -1);
+    document.getElementById("textview").value = erasedValue;
 }
 
 function allClear() {
